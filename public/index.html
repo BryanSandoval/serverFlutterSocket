@@ -26,6 +26,13 @@
         {
             console.log("Escuchando del servidor: ",payload);
         });
+
+        //active-bands
+        cliente.on('active-bands', function(payload)
+        {
+            console.clear();
+            console.table(payload);
+        });
     </script>
 </body>
 </html>

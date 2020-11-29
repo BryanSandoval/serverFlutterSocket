@@ -4,7 +4,11 @@ require("dotenv").config();
 
 //App de Express
 const app = express();
-
+/*
+    Ejecutar aplicación con NPM y NODEMON: 
+    Desarrollo: npm run start:dev
+    Producción: node start
+*/
 //Servidor Sockets
 const server = require("http").createServer(app);
 module.exports.io = require("socket.io")(server);
